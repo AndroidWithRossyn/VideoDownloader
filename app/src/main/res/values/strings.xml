@@ -1,0 +1,216 @@
+ <resources>
+    <string name="app_name" translatable="false">All Video Downloader with VPN</string>
+
+    <string name="tag_line" translatable="false">Download All Status on One Click</string>
+
+    <string name="video_downloader">VIDEO DOWNLOADER</string>
+    <string name="vpn">VPN</string>
+    <string-array name="interest_array">
+        <item>Facebook</item>
+        <item>Instagram</item>
+        <item>Whatsapp</item>
+        <item>Vimeo</item>
+        <item>Dailymotion</item>
+        <!--<item>Sports</item>-->
+        <!--<item>people</item>-->
+        <!--<item>Other</item>-->
+        <item>Vpn</item>
+        <item>Network</item>
+        <item>Private</item>
+    </string-array>
+
+    <string name="im_interested">I\'m interested in </string>
+    <string name="single_selection">Single Selection</string>
+    <string name="multi_selection">Select Category</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="share_txt">Hey view/download this image</string>
+    <string name="share_image_via">Share File via...</string>
+    <string name="share_app_message">Download All Videos using this app. Download Now</string>
+
+
+    <string name="insta_app_name">Instagram</string>
+    <string name="whatsapp_app_name">WA &amp; WA Business</string>
+    <string name="tiktok_app_name">TikTok</string>
+    <string name="likee_app_name">Likee</string>
+    <string name="facebook_app_name">Facebook</string>
+    <string name="twitter_app_name">Twitter</string>
+    <string name="gallery_name">Gallery</string>
+    <string name="share_app_name">Share App</string>
+    <string name="rate_app_name">Rate App</string>
+    <string name="more_app_name">More App</string>
+    <string name="more_app_tag">View Our Other Creations</string>
+
+    <!--About Page-->
+    <string name="second_how_too">2. Share with All in One Status Saver</string>
+    <string name="fourth_how_too">2. Open All in One Status Saver</string>
+    <string name="opn_fb">1. Open Facebook</string>
+    <string name="copy_video_link_frm_fb">1. Copy Video Link from Facebook</string>
+    <string name="enter_url">Enter Url</string>
+    <string name="enter_valid_url">Enter Valid Url</string>
+
+    <string name="do_u_want_to_dlt">Do you want to delete?</string>
+    <string name="file_deleted">File Deleted.</string>
+    <string name="opn_insta">1. Open Instagram</string>
+    <string name="cancel">Cancel</string>
+    <string name="do_u_want_to_download_media_from_pvt">Don\'t Want to Download Media from Private Account?</string>
+    <string name="no_net_conn">No Internet Connection</string>
+    <string name="downloadin_video">Downloading Video...</string>
+    <string name="download_complete">Download Completed</string>
+    <string name="app_not_available">App Not Available.</string>
+    <string name="error_occurred">Error Occurred</string>
+    <string name="open_tiktok">1. Open TikTok</string>
+    <string name="open_likee">1. Open Likee</string>
+    <string name="copy_video_link_from_likee">1. Copy Video Link from Likee</string>
+    <string name="open_twitter">1. Open Twitter</string>
+    <string name="no_media_on_tweet">No Media on Tweet or Invalid Link</string>
+    <string name="no_media_on_facebook">No Media on Facebook or Invalid Link</string>
+    <string name="no_media_on_likee">No Media on Likee or Invalid Link</string>
+    <string name="images">Images</string>
+    <string name="videos">Videos</string>
+    <string name="saved_to">Saved to:</string>
+    <string name="whatsapp_not_installed">Whtasapp not installed.</string>
+    <string name="wapp_permission">Click on this button and Allow permission to access your status</string>
+    <string name="allow_storage_access">Allow storage access</string>
+    <string name="no_app_installed">No application found to open this file.</string>
+
+
+    <string name="change_lang">Change Language</string>
+    <string name="english">English</string>
+    <string name="hindi">हिंदी</string>
+    <string name="change_your_language">Change Your Language</string>
+    <string name="how_to_download">How to Download</string>
+    <string name="or_download_using_copied_link">or Download using copied link</string>
+    <string name="share">Share</string>
+    <string name="delete">Delete</string>
+    <string name="whatsapp">Whatsapp</string>
+    <string name="download_from_private_account">Download from Private Account</string>
+    <string name="paste_link">Paste Link</string>
+    <string name="without_watermark">Without Watermark</string>
+    <string name="with_watermark">With Watermark</string>
+    <string name="download">Download</string>
+    <string name="paste">Paste</string>
+    <string name="no_result_found">No Result Found</string>
+    <string name="getting_downloading_link">Getting Downloading Link...</string>
+
+
+    <string name="gallery">Gallery</string>
+    <string name="download_started">Download Started</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="view_stories">View Stories and Download from Private Account</string>
+    <string name="login">Login</string>
+    <string name="stories">Stories</string>
+    <string name="ad_attribution">Ad</string>
+
+    <!--    Vpn start-->
+
+    <string name="admob_appid">test</string>
+
+    <string name="vpn_process_name" translatable="false">:my.custom.vpn.process.name</string>
+    <string name="vpn_provider_authorities" translatable="false">com.anchorfree.hydrasdk.app.demo</string>
+
+    <string name="log_in">LOGIN</string>
+    <string name="log_out">LOGOUT</string>
+    <string name="connect">CONNECT</string>
+    <string name="disconnect">DISCONNECT</string>
+    <string name="optimal_server">OPTIMAL SERVER</string>
+    <string name="unknown">UNKNOWN</string>
+
+    <bool name="ads_switch">true</bool>
+    <bool name="admob_list_ads">true</bool>
+    <string name="app_error">Application error</string>
+    <string name="no_data">No data</string>
+    <string name="personal_information">Personal Information</string>
+    <string name="no_network">Unable to connect to server. Check your Internet connection.</string>
+    <string name="online_devices">Online Devices</string>
+    <string name="please_wait">Please Wait</string>
+    <string name="vpn_server_location">VPN Server Location</string>
+    <string name="vpn_node">VPN Node</string>
+    <string name="legal_information">Legal Information</string>
+
+    <string name="logged_in">Logged in</string>
+    <string name="logged_out">Logged out</string>
+    <string name="connected">Connected</string>
+    <string name="disconnected">Status: Disconnected</string>
+
+    <string name="host_url_title">Host Url: </string>
+    <string name="carrier_id_title">Carrier ID: </string>
+    <string name="confirm">CONFIRM</string>
+
+    <string name="traffic_stats">UL: %1$s, DL: %2$s </string>
+    <string name="traffic_limit">%1$s of %2$s available</string>
+    <string name="traffic_unlimited">UNLIMITED</string>
+
+    <string name="current_server">CURRENT_SERVER</string>
+    <string name="connecting">Status: Connecting...</string>
+    <string name="paused">Paused</string>
+    <string name="title_activity_navi">NaviActivity</string>
+    <string name="nav_header_title">Free VPN Proxy</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!--ads subscription  Package-->
+    <string name="ads_price_monthly">Monthly $4.99</string>
+
+    <!--Top subscription  Packages-->
+    <string name="top_package_month">Monthly $1.99</string>
+    <string name="top_package_6month">Six Months $5.99</string>
+    <string name="top_package_12month">Yearly $9.99</string>
+
+    <!--ads+Top subscription  Packages-->
+    <string name="both_package_month">Monthly $3.99</string>
+    <string name="both_package_6month">Six Months $7.99</string>
+    <string name="both_package_12month">Yearly $11.99</string>
+
+    <string name="current_ip">Current IP</string>
+    <string name="default_server_ip_text">00.000.000.00</string>
+    <string name="main_terms_1">main_terms</string>
+    <string name="R_string_main_terms_2">main_terms_2</string>
+    <string name="agree_next"><![CDATA[Agree & Next]]></string>
+
+    <string name="vpn_desc" translatable="false">Connect with vpn for downloading all video anonymously, Unlock all websites.</string>
+    <string name="select_country">Selected Country</string>
+    <!--    Vpn end-->
+
+
+    <string name="wrong_folder">Wrong folder</string>
+    <string name="selected_wrong_folder">You have selected wrong folder. Please select .Statuses folder to view Whatsapp Status.</string>
+    <string name="ok">OK</string>
+
+
+    <string name="allow_app_to_access_whatsapp_status_folder">Allow App to Access Whatsapp Status Folder</string>
+
+    <string name="try_premium">TRY PREMIUM</string>
+    <string name="offline_translation">Offline OCR</string>
+    <string name="faster_translation">Faster Translation</string>
+    <string name="unlimited_translation">Unlimited Translation</string>
+    <string name="no_ads">100% No Ads</string>
+    <string name="fast_connection">Fast Connection Speed</string>
+    <string name="security">Security</string>
+    <string name="trial_title">Try 3 days for free.</string>
+    <string name="price_trial">Subscription automatically renews each package Time Duration. Cancel anytime in Subscription on Google Play.</string>
+    <string name="trial_button_title">Start my free trial</string>
+    <string name="yeraly_button_trial">Yearly</string>
+    <string name="monthly_button_trial">Monthly</string>
+    <string name="weekly_button_trial">Weekly</string>
+    <string name="onetime_button_trial">OneTime - Payment</string>
+
+
+    <string name="privacy_policy">https://ankiappssof.blogspot.com/p/privacy-policy.html</string>
+
+    <string name="privacy_url" translatable="false">https://ankiappssof.blogspot.com/p/privacy-policy.html</string>
+
+    <string name="privacy_policy_title">Privacy Policy</string>
+
+    <string name="facebook_app_id">788991162493050</string>
+
+
+    <string name="new_york_ny">New York, NY</string>
+    <string name="best_performance_server">Select Fastest Server</string>
+    <string name="default_region">DEFAULT REGION</string>
+</resources>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bac"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorAccent">
+
+            <TextView
+                android:id="@+id/txtTileDialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="Really Exit ?"
+                android:textColor="@android:color/white"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/txtMessageDialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Message"
+                android:textAlignment="center"
+                android:textSize="15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.00dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnNegative"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5.00dp"
+                    android:layout_marginRight="5.00dp"
+                    android:background="@drawable/yes_no"
+                    android:gravity="center"
+                    android:minWidth="100.00dp"
+                    android:text="No"
+                    android:textColor="#FFF"
+                    android:textSize="12.00dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnPositive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5.00dp"
+                    android:layout_marginRight="5.00dp"
+                    android:background="@drawable/yes_no"
+                    android:gravity="center"
+                    android:minWidth="100.00dp"
+                    android:text="Yes"
+                    android:textColor="#FFF"
+                    android:textSize="12.00dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearAdsNative_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:orientation="vertical" />
+
+    </LinearLayout>
+</LinearLayout>

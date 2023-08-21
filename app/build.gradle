@@ -1,0 +1,177 @@
+apply plugin: 'com.onesignal.androidsdk.onesignal-gradle-plugin'
+apply plugin: 'com.android.application'
+//apply plugin: 'com.google.gms.google-services'
+//apply plugin: 'com.google.firebase.crashlytics'
+
+android {
+    compileSdk 33
+    buildToolsVersion '30.0.3'
+    defaultConfig {
+     applicationId "com.prox1.video1.download1"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 2
+        versionName "2.0"
+        multiDexEnabled true
+
+        buildConfigField "String", "BASE_HOST", "\"https://backend.northghost.com\""
+        buildConfigField "String", "BASE_HOST", "\"https://d2isj403unfbyl.cloudfront.net\""
+        buildConfigField "String", "BASE_CARRIER_ID", "\"touchvpn\""
+        buildConfigField "String", "BASE_OAUTH_METHOD", "\"anonymous\""
+
+        buildConfigField "String", "SHARED_PREFS", "\"NORTHGHOST_SHAREDPREFS\""
+        buildConfigField "String", "STORED_HOST_URL_KEY", "\"com.northghost.afvclient.STORED_HOST_KEY\""
+        buildConfigField "String", "STORED_CARRIER_ID_KEY", "\"com.northghost.afvclient.CARRIER_ID_KEY\""
+
+        buildConfigField "Boolean", "USE_IN_APP_PURCHASE", "true"
+
+        ndkVersion '21.3.6528147'
+
+
+    }
+    signingConfigs {
+        release {
+
+        }
+    }
+    buildTypes {
+        debug {
+            lintOptions {
+                disable 'MissingTranslation'
+                abortOnError false
+            }
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        release {
+            lintOptions {
+                disable 'MissingTranslation'
+                abortOnError false
+            }
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    dataBinding {
+        enabled = true
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+
+    bundle {
+
+        language {
+            enableSplit = false
+        }
+    }
+    dependenciesInfo {
+        includeInApk true
+        includeInBundle true
+    }
+}
+
+dependencies {
+    implementation 'br.com.simplepass:loading-button-android:1.14.0'
+    implementation 'androidx.appcompat:appcompat:1.4.1'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.android.material:material:1.5.0'
+    implementation 'com.google.code.gson:gson:2.8.8'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.7.1'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.9.0'
+    implementation 'com.squareup.okhttp3:okhttp:4.9.0'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.19'
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    implementation project(path: ':AdsSdk')
+    implementation 'org.apache.commons:commons-lang3:3.9'
+    implementation 'commons-io:commons-io:2.6'
+    implementation 'org.jsoup:jsoup:1.11.1'
+    implementation 'com.google.android.play:core:1.10.2'
+//    implementation 'com.facebook.android:audience-network-sdk:5.9.1'
+
+//    implementation 'com.google.firebase:firebase-analytics:17.3.0'
+//    implementation 'com.google.firebase:firebase-messaging:20.1.4'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    annotationProcessor 'androidx.databinding:databinding-compiler:7.0.2'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.0'
+//    implementation 'com.google.android.gms:play-services-ads:20.5.0'
+
+//    implementation platform('com.google.firebase:firebase-bom:28.2.0')
+//    implementation 'com.google.firebase:firebase-analytics'
+//    implementation 'com.google.firebase:firebase-config:21.0.1'
+//    implementation 'com.google.firebase:firebase-crashlytics:18.2.1'
+//    implementation 'com.google.firebase:firebase-messaging:22.0.0'
+
+    def lifecycle_version = "2.0.0"
+    implementation "androidx.lifecycle:lifecycle-extensions:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-runtime:$lifecycle_version"
+    annotationProcessor "androidx.lifecycle:lifecycle-compiler:$lifecycle_version"
+//    implementation 'com.onesignal:OneSignal:4.4.0'
+
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+
+    implementation 'com.google.android.gms:play-services-ads:20.6.0'
+    implementation 'com.google.ads.mediation:facebook:6.8.0.0'
+
+    /*------------------------VPN Dependency----------------------------*/
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
+    implementation 'com.github.AnchorFreePartner.hydra-sdk-android:openvpn:3.6.2'
+    implementation 'com.github.AnchorFreePartner.hydra-sdk-android:sdk:3.6.2'
+
+    implementation 'com.jakewharton:butterknife:10.2.3'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.3'
+
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
+    implementation 'net.cachapa.expandablelayout:expandablelayout:2.9.2'
+
+    implementation 'com.pixplicity.easyprefs:library:1.9.0'
+    implementation "com.airbnb.android:lottie:4.1.0"
+    implementation 'com.onesignal:OneSignal:4.6.5'
+
+    implementation 'com.github.daoibrahim:AdmobAdvancedNativeRecyclerview:1.0.0'
+    implementation 'androidx.percentlayout:percentlayout:1.0.0'
+
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.23'
+
+    implementation group: 'com.jakewharton.timber', name: 'timber', version: '4.7.1'
+
+    /*------------------------VPN Dependency End----------------------------*/
+
+    implementation 'com.google.android:flexbox:0.3.0'
+
+    implementation 'com.facebook.android:facebook-android-sdk:latest.release'
+
+//    implementation 'com.android.billingclient:billing:4.0.0'
+
+    //            --------------------- Iron Source----------------------
+    implementation 'com.ironsource.sdk:mediationsdk:7.2.0'
+
+    implementation 'com.google.android.gms:play-services-ads-identifier:18.0.1'
+    implementation 'com.google.android.gms:play-services-basement:18.0.0'
+
+    // Add Facebook Network
+    implementation 'com.ironsource.adapters:facebookadapter:4.3.34'
+    implementation 'com.facebook.android:audience-network-sdk:6.8.0'
+
+}
+//apply plugin: 'com.google.gms.google-services'

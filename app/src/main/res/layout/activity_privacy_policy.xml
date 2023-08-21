@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/html_privacy_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.9"
+            android:layout_margin="5dp"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/next"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="0.1"
+            android:background="@drawable/background"
+            android:gravity="center"
+            android:onClick="next"
+            android:text="@string/agree_next"
+            android:textColor="#fff"
+            android:textFontWeight="1"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5">
+
+            <RelativeLayout
+                android:id="@+id/relativeAdsBanner"
+                android:layout_width="match_parent"
+                android:layout_height="95dp"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom|center"
+                android:gravity="center|bottom" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

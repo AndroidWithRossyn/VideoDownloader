@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F8AD5D</color>
+    <color name="colorPrimaryDark">#F67632</color>
+    <color name="colorAccent">#FF345C</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000</color>
+    <color name="grey">#BFBFBF</color>
+    <color name="green">#4BFF52</color>
+    <color name="btn_text">#124187</color>
+
+    <color name="rippleColor">#70ffffff</color>
+
+    <color name="transperant">#00000000</color>
+    <color name="ripple_shadow">#6FFFFFFF</color>
+    <color name="drawer_text">#FFFFFF</color>
+    <color name="primary">#7018e1</color>
+</resources>
